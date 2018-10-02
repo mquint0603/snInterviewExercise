@@ -1,0 +1,15 @@
+html { font-family: 'Open Sans', sans-serif; }
+
+.main-section {
+  margin: 0 auto;
+  max-width: 970px;
+  padding: 20px;
+}
+
+button {
+  background: #20558a;
+  color: white;
+  padding: 15px 30px;
+  border: 1px solid black;
+  outline: 0;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>JS Interview Test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<section class="main-section">
+  <h1>JS Interview Test</h1>
+  <h3>Instructions</h3>
+  <ul>
+    <li>Open the <span class="label">js/Person.js</span>, <span class="label">js/PersonTreeNode.js</span>, and <span class="label">js/answer.js</span> files in you favorite editor.</li>
+    <li>Fill out the <span class="label">generateTree</span> function in <span class="label">js/answer.js</span>.  <span class="text-danger">DO NOT edit any other files!</span></li>
+    <li>The <span class="label">generateTree</span> function should return the root <span class="label">PersonTreeNode</span> (the ceo).</li>
+    <li>
+      Each <span class="label">PersonTreeNode</span>'s <span class="label">directReports</span>
+      array should contain a <span class="label">PersonTreeNode</span> for each direct report
+      (someone who reports directly to you, i.e. you are their manager).
+    </li>
+    <li>Refresh the page or click the button to retry the test.</li>
+  </ul>
+
+  <div style="margin-top:10px;">
+    <button onclick="javascript:window.location.reload();">Retry Test</button>
+  </div>
+
+  <h3>Test Results</h3>
+  <div id="test-results"></div>
+
+  <h3>Org Chart Structure</h3>
+  <pre>
+                                        Kirk
+                                         |
+                                         |
+                                         v
+                                        Mark
+                                         |
+                                         |
+                                         v
+                                        Tom
+                                         |
+                                         |
+                                         |
+                             +----------------------+
+                             |                      |
+                             v                      v
+                           Nick                    Ben
+                             |                      |
+           +------------------------+               |
+           |                        |               |
+           v                        v               v
+         Stacey                   Corey           David
+           |
+           |
+           |
+   +---------------+
+   |               |
+   |               |
+   v               v
+  Tom            Julie
+
+  </pre>
+</section>
+
+
+
+<script src="js/Person.js"></script>
+<script src="js/PersonTreeNode.js"></script>
+<script src="js/answer.js"></script>
+<script src="js/test.js"></script>
+
+</body>
+</html>
